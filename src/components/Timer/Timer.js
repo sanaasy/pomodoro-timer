@@ -1,11 +1,12 @@
 import React from "react";
 import Header from './TimerHeader';
+import Time from './TimerDisplay';
 
 const Timer = () => {
   return (
     <div className="container-fluid">
       <Header />
-      <h2 className="text-center">00:00</h2>
+      <Time />
       <div class="text-center">
         <button type="button" class="btn btn-success">Start</button>
       </div>
