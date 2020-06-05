@@ -1,8 +1,17 @@
 import React from "react";
 
-const TimerDisplay = () => {
+const leftPad = (val) => {
+  if (val < 10) return `0${val}`;
+
+  return `${val}`;
+}
+
+
+const TimerDisplay = (props) => {
   return (
-    <h2 className="text-center">00:00</h2>
+    <div>
+      <h2 className="text-center">{`${leftPad(props.currentTime.get('minutes'))}:${leftPad(props.currentTime.get('seconds'))}`}</h2>
+    </div>
   );
 };
 
