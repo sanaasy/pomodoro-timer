@@ -10,8 +10,8 @@ class TimerConfig extends Component {
   handleChange(event) {
     const newBaseTime = this.props.baseTime;
 
-    if (event.target.id === 'minutes') newBaseTime.subtract(newBaseTime.get('minutes'), 'minutes').add(parseInt(event.target.value), 'minutes');
-    if (event.target.id === 'seconds') newBaseTime.subtract(newBaseTime.get('seconds'), 'seconds').add(parseInt(event.target.value), 'seconds');
+    if (event.target.id === 'minutes') newBaseTime.subtract(newBaseTime.get('minutes'), 'minutes').add(parseInt(event.target.value, 10), 'minutes');
+    if (event.target.id === 'seconds') newBaseTime.subtract(newBaseTime.get('seconds'), 'seconds').add(parseInt(event.target.value, 10), 'seconds');
 
     this.props.setBaseTime(newBaseTime);
   }
