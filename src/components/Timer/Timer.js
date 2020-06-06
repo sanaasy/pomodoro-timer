@@ -12,16 +12,31 @@ class Timer extends Component {
     this.state = {
       currentTime: moment.duration(25, 'minutes'),
       // time that it always goes back to 
-      baseTime: moment.duration(25, 'minutes')
+      baseTime: moment.duration(25, 'minutes'),
     }
+
+    this.setBaseTime = this.setBaseTime.bind(this);
   }
+
+  setBaseTime(newBaseTime) {
+    this.setState({
+      baseTime: newBaseTime,
+      currentTime: newBaseTime,
+    });
+  }
+
   render() {
     return (
       <div className="container-fluid" >
         <Header />
-        <Time currentTime={this.state.currentTime} />
+        <Time
+          currentTime={this.state.currentTime}
+        />
         <Start />
-        <TimerConfig />
+        <TimerConfig
+          baseTime={this.state.baseTime}
+          setBaseTime={this.setBaseTime}
+        />
       </div>
     )
   }
