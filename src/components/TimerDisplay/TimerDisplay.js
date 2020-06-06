@@ -4,7 +4,8 @@ import * as states from '../../TimerStates.js';
 import alarm from '../../pomodoro-alarm.mp3';
 
 const leftPad = (val) => {
-  if (val < 10) return `0${val}`;
+  if (val < 10)
+    return `0${val}`;
 
   return `${val}`;
 }
