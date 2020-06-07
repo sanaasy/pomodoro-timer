@@ -10,7 +10,6 @@ import enTranslations from '@shopify/polaris/locales/en.json';
 
 import 'bootstrap/dist/css/bootstrap.css';
 global.jQuery = require('jquery');
-require('bootstrap');
 
 ReactDOM.render(
   <AppProvider i18n={enTranslations}>
