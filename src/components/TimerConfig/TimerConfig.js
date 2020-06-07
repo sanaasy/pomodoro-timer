@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Heading, Badge } from '@shopify/polaris';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faClock } from '@fortawesome/free-solid-svg-icons';
 
 class TimerConfig extends Component {
   constructor() {
@@ -19,36 +22,34 @@ class TimerConfig extends Component {
   render() {
     return (
       <span>
-        <h2 className="text-primary">Set Timer</h2>
-        <div className="form-group form-inline">
-          <div className="col-sm-3">
-            <label htmlFor="minutes">Minutes</label>
-          </div>
-          <div className="col-sm-9">
-            <input
-              id="minutes"
-              className="form-control"
-              type="number"
-              max="59"
-              defaultValue={this.props.baseTime.get('minutes')}
-              onChange={this.handleChange}
-            />
-          </div>
+        <div className="header">
+          <Heading element="h1">Set Timer <FontAwesomeIcon icon={faClock} /></Heading>
         </div>
-        <div className="form-group form-inline">
+        <div className="form-group form-inline table">
           <div className="col-sm-3">
-            <label htmlFor="seconds">Seconds</label>
+            <Badge >Minutes</Badge>
           </div>
-          <div className="col-sm-9">
-            <input
-              id="seconds"
-              className="form-control"
-              type="number"
-              max="59"
-              defaultValue={this.props.baseTime.get('seconds')}
-              onChange={this.handleChange}
-            />
+          <input
+            id="minutes"
+            className="form-control"
+            type="number"
+            max="59"
+            defaultValue={this.props.baseTime.get('minutes')}
+            onChange={this.handleChange}
+          />
+        </div>
+        <div className="form-group form-inline table">
+          <div className="col-sm-3">
+            <Badge>Seconds</Badge>
           </div>
+          <input
+            id="seconds"
+            className="form-control"
+            type="number"
+            max="59"
+            defaultValue={this.props.baseTime.get('seconds')}
+            onChange={this.handleChange}
+          />
         </div>
       </span>
     );

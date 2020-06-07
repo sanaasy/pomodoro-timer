@@ -77,7 +77,7 @@ class Timer extends Component {
 
   render() {
     return (
-      <div className="container-fluid" >
+      <div className="container-fluid">
         <Header />
         <Time
           currentTime={this.state.currentTime}

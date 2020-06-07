@@ -4,6 +4,24 @@
   padding: 40px;
 }
 
+.header{
+  text-align: center;
+  padding: 0 0 20px 0;
+  margin-top: 4%;
+}
+
+.table {
+  margin-left: 24%;
+}
+
+.background {
+  background-color: #C1FFF2;
+}
+
+.cardColour {
+  background-color: #ABEDC6;
+}
+
 /* less than 650px screen: make it full screen */
 @media (max-width: 650px) {
   .app-content {
