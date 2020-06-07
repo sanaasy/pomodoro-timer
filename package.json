@@ -2,6 +2,10 @@
   "name": "pomodoro-timer",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.13.4",
+    "node": "13.5.0"
+  },
   "dependencies": {
     "@shopify/polaris": "^4.24.0",
     "@testing-library/jest-dom": "^4.2.4",
@@ -22,7 +26,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "ng build --prod"
   },
   "eslintConfig": {
     "extends": "react-app"
