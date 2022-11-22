@@ -22,7 +22,7 @@
     "react-document-title": "^2.0.3",
     "react-dom": "^16.13.1",
     "react-fa-icon": "^0.1.4",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "react-sound": "^1.2.0",
     "styled-components": "^5.1.1",
     "use-sound": "^1.0.2"
