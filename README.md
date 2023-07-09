@@ -5,7 +5,7 @@ where I create a pomodor timer (25 mins work - 5 min break)
 react + polaris
 
 # how to run it
-[check out this link to see it on your browser (deployed on heroku)!](https://sanaa-pomodoro-timer.herokuapp.com/)
+[check out this link to see it on your browser (deployed on vercel)!](https://pomodoro-timer-6qlz.vercel.app/)
 ## OR 
 1. ```git clone``` this repo 
 2. ```npm install```
